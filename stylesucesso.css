@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+	background: #051821;
+}
+
+.container2{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 150px auto;
+	flex-direction: column;
+}
+
+.sucesso h1{
+	color: #f8bc24;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.sucesso h2{
+	color: #f58800;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.contato{
+	list-style-type: none;
+}
+
+.contato a{
+		text-decoration: none;
+		font-size: 30px;
+		color: #266867;
+}
+
+.contato i{
+	color: #266867;
+}
+
+.contato a:hover{
+	color: #f58800;
+}
+
+/*----------------------------------------------*/
+/*----------   ACIMA DE 768PX     --------------*/
+/*----------------------------------------------*/
+
+@media screen and (min-width: 48em){
+
+	.body-sucesso{
+		background:#051821 url(fundoipad.png) no-repeat top;
+	}
+
+	.contato li{
+		float: left;
+		padding: 20px;
+	}
+}
+
+/*----------------------------------------------*/
+/*----------   ACIMA DE 1024PX     --------------*/
+/*----------------------------------------------*/
+@media screen and (min-width: 64em){
+
+/*pag sucesso*/
+
+.sucesso h1{
+	font-size: 40px;
+}
+
+.sucesso h2{
+	color: #f58800;
+}
+
+.body-sucesso{
+	background: #051821;
+}
+
+}
+
+/*----------------------------------------------*/
+/*----------   ACIMA DE 1280PX     --------------*/
+/*----------------------------------------------*/
+@media screen and (min-width: 80em){
+	.body-sucesso{
+		background:#051821 url(fundoipad.png) no-repeat top;
+	}
+}
+
+/*----------------------------------------------*/
+/*----------   ACIMA DE 1800PX     --------------*/
+/*----------------------------------------------*/
+@media screen and (min-width: 112.5em){
+		.body-sucesso{
+			background:#051821 url(fundogrande.png) no-repeat;
+		}
+	}
